@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>NetBinge</title>
+
+	<!--  Stylesheets  -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/netBinge.css" rel="stylesheet">
+
+	<!--  Javascript  -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/popout.js"></script>
+
+	<style type="text/css" >
+		body {
+  			height: 350px; /* your desired width */
+  			width: 350px;
+  			position: relative;
+  			vertical-align:middle;
+		}
+	</style>
+
+</head>
+	<body>
+		<nav class="navbar navbar-default text-white" role="navigation" style="background-color: #B9090B">
+				<div class="navbar-header">
+					<a class="navbar-brand"><font face="Yesteryear" size="10">NetBinge</font></a>
+				</div>
+				<img src="img/popcorn.png" style="max-width: 20%; height: auto">
+		</nav>
+
+		<hr>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs ml-3">
+					<div class="switch" style="display: inline-block;">
+  						<input id="toggle-autoSkip" class="cmn-toggle cmn-toggle-round-flat-sm" type="checkbox" checked>
+  						<label for="toggle-autoSkip"></label>
+					</div>
+				</div>
+				<div class="col-xs ml-3">
+					Auto-Skip Intro
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-xs ml-3">
+					<div class="switch" style="display: inline-block;">
+  						<input id="toggle-stillThere" class="cmn-toggle cmn-toggle-round-flat-sm" type="checkbox" checked>
+  						<label for="toggle-stillThere"></label>
+					</div>
+				</div>
+				<div class="col-xs ml-3">
+					Auto-Skip "Are You Still There?"
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-xs ml-3">
+					<div class="switch" style="display: inline-block;">
+  						<input id="toggle-blurredDesc" class="cmn-toggle cmn-toggle-round-flat-sm" type="checkbox" checked>
+  						<label for="toggle-blurredDesc"></label>
+					</div>
+				</div>
+				<div class="col-xs ml-3">
+					Blur Episode Descriptions
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+
+				<div class="col-xs ml-3">
+					<button type="button" id="saveButton" class="btn btn-primary">Save</button>
+				</div>
+
+				<div class="col-xs ml-3 mt-2 text-muted">
+					<i><small>Please refresh current Netflix tab</small></i>
+				</div>
+
+			</div>
+		
+	</body>
+</html>
+
+
+
+
