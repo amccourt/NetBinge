@@ -3,7 +3,7 @@
 
   "name": "NetBinge",
   "description": "Provide a few basic features to quality and ease of use for Netflix users.",
-  "version": "1.0",
+  "version": "1.1",
   "icons" : {
     "48"  : "img/48icon.png",
     "128" : "img/icon.png"

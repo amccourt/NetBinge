@@ -3,16 +3,29 @@ var	stillThere  = false;
 var blurredDesc = false; 
 
 /*  Load saved values  */
+
 chrome.storage.sync.get('autoSkip', function(data) {
-	autoSkip = data.autoSkip;
+	if (typeof data.autoSkip == 'undefined') {
+		autoSkip = true;
+	} else {
+		autoSkip = data.autoSkip;
+	}
 });
 
 chrome.storage.sync.get('stillThere', function(data) {
-	stillThere = data.stillThere;
+	if (typeof data.stillThere == 'undefined') {
+		stillThere = true;
+	} else {
+		stillThere = data.stillThere;
+	}
 });
 
 chrome.storage.sync.get('blurredDesc', function(data) {
-	blurredDesc = data.blurredDesc;
+	if (typeof data.blurredDesc == 'undefined') {
+		blurredDesc = true;
+	} else {
+		blurredDesc = data.blurredDesc;
+	}
 });
 
 
@@ -58,6 +71,13 @@ setInterval(function() {
 			for (var i = 0; i < descList.length; i++) {
 				descList[i].setAttribute("style", "color: transparent; text-shadow: 0 0 10px white;");
 			}
+
+			descList = document.getElementsByClassName("WatchNext-episode-synopsis");
+
+			for (var i = 0; i < descList.length; i++) {
+				descList[i].setAttribute("style", "color: transparent; text-shadow: 0 0 10px white;");
+			}
+
 		}
 		catch(err) {
 			console.log(err);
